@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Creativity Festival</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-beige-700">
+    <header class="bg-pink-100 shadow-md text-center">
+        <div class="container mx-auto flex items-center justify-between"></div>
+        <h1 class="text-4xl text-pink-700 text-sans-serif">Student Creativity Festival</h1>
+        <p class="text-pink-700 text-sans-serif">Showcase Your Creativity, Skills and Innovative Ideas</p>
+    </header>
+
+    <!-- Registration Form -->
+     <div class="max-w-3xl mx-auto my-10 bg-pink-100 shadow-lg rounded-xl p-8">
+
+        <h1 class="text-3xl font-bold text-center text-pink-700 mb-2">
+            Registration Form
+        </h1>
+
+        <form class="space-y-6">
+
+            <!-- Student Name -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700 text-gray-400">
+            </div>
+
+            <!-- Class -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Class
+                </label>
+
+                <select class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700 text-gray-400">
+                    <option>X</option>
+                    <option>XI</option>
+                    <option>XII</option>
+                </select>
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Gender
+                </label>
+
+                <div class="flex flex-wrap gap-6">
+                    <label class="flex items-center text-gray-400 gap-2">
+                        <input type="radio" name="status">
+                        Male
+                    </label>
+
+                    <label class="flex items-center text-gray-400 gap-2">
+                        <input type="radio" name="status">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Competition Category -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Competition Category
+                </label>
+
+                <select class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700 text-gray-400">
+                    <option>Web Development</option>
+                    <option>IoT Project</option>
+                    <option>Graphic Design</option>
+                    <option>Public Speaking</option>
+                    <option>Photography</option>
+                </select>
+            </div>
+
+            <!-- Participation Type -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Participation Type
+                </label>
+
+                <div class="flex flex-wrap gap-6">
+                    <label class="flex items-center text-gray-400 gap-2">
+                        <input type="radio" name="status">
+                        Individual
+                    </label>
+
+                    <label class="flex items-center text-gray-400 gap-2">
+                        <input type="radio" name="status">
+                        Team
+                    </label>
+                </div>
+            </div>
+
+             <!-- Team Name -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Team Name
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your team's name"
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700">
+            </div>
+
+             <!-- Contact Number -->
+            <div>
+                <label class="block font-semibold text-pink-700 mb-2">
+                    Contact Number
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="08xxxxxxxxx"
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700">
+            </div>
+
+            <!-- Project Description -->
+            <div>
+                <label class="block font-semibold text-pink-700">
+                    Project Description
+                </label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Describe you project or competition entry..."
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-700"></textarea>
+            </div>
+
+             <!-- Registration Button -->
+            <button
+                type="submit"
+                class="w-full bg-pink-700 text-white py-3 rounded-lg font-semibold transition duration-300 hover:bg-pink-800">
+                Register Now
+            </button>
+        </form><br>
+
+        <!-- Participant Table -->
+      <table class="w-full border-1 border-gray-200 shadow-xl"><br>
+        <tr>
+            <th colspan="6" class="bg-pink-200 text-pink-700 py-3">Participant Table</th>
+        </tr>
+        <tbody>
+            <tr>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">No</th>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">Participant</th>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">Class</th>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">Category</th>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">Team</th>
+            <th class="border-1 border-pink-200 text-semibold text-pink-700 py-3">Status</th>
+        </tr>
+        </tr>
+        <tr>
+            <td class="border-1 border-pink-200 text-center text-pink-700">1</td>
+            <td class=" border-1 border-pink-200 text-center text-pink-700">Ahmad Fauzan</td>
+            <td class="text-center border-1 border-pink-200 text-pink-700">X</td>
+            <td class="border-1 border-pink-200 text-pink-700">Web Development</td>
+            <td class="border-1 border-pink-200 text-center text-pink-700">CodeX</td>
+            <td class="border-1 border-pink-200 text-center text-pink-700">Registered</td>
+        </tr>
+        <tr>
+            <td class="border-1 border-pink-200 text-center text-pink-700">2</td>
+            <td class=" border-1 border-pink-200 text-center text-pink-700">Aisyah Putri</td>
+            <td class="text-center border-1 border-pink-200 text-pink-700">XI</td>
+            <td class="border-1 border-pink-200 text-pink-700">IoT Project</td>
+            <td class="border-1 border-pink-200 text-center text-pink-700">SmartTech</td>
+            <td class="border-1 border-pink-200 text-center text-pink-700">Pending</td>
+        </tr>
+        </tbody>
+      </table>
 </body>
 </html>
